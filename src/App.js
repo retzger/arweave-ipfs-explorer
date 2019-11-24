@@ -28,7 +28,7 @@ class Display extends React.Component {
   constructor(props) {
     super(props);
     this.getHash(this.props.match.params.hash);
-
+    document.title = this.props.match.params.hash;
     this.state = {
       errorMsg: "",
       text: "",
