@@ -5,7 +5,12 @@
 
 It uses [arweave-ipfs](https://github.com/imerkle/arweave-ipfs)(serverless) and [arweave-ipfs-server](https://github.com/imerkle/arweave-ipfs-server)(server-backed) at it's core.
 
-This explorer works similar to the other ipfs api for example [infura](https://ipfs.infura.io/ipfs/QmTAznyH583xUgEyY5zdrPB2LSGY7FUBPDddWKj58GmBgp), [globalupload](https://ipfs.globalupload.io/QmTAznyH583xUgEyY5zdrPB2LSGY7FUBPDddWKj58GmBgp)
+This explorer works similar to the other ipfs api for example infura, globalupload 
+
+https://ipfs.infura.io/ipfs/QmTAznyH583xUgEyY5zdrPB2LSGY7FUBPDddWKj58GmBgp
+
+https://ipfs.globalupload.io/QmTAznyH583xUgEyY5zdrPB2LSGY7FUBPDddWKj58GmBgp
+
 
 # Serverless Arweave-Ipfs Explorer
 
