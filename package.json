@@ -2,6 +2,7 @@
   "name": "arweave-ipfs-explorer",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "arweave-ipfs": "https://github.com/imerkle/arweave-ipfs.git",
     "file-type": "^12.4.0",

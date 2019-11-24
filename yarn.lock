@@ -1759,7 +1759,7 @@ arrify@^1.0.1:
 
 "arweave-ipfs@https://github.com/imerkle/arweave-ipfs.git":
   version "1.0.0"
-  resolved "https://github.com/imerkle/arweave-ipfs.git#6ff2b6c9b51a148ea23e69db81c8c7c317f59211"
+  resolved "https://github.com/imerkle/arweave-ipfs.git#6cc7a0cd6ad8fbdf2d4ac26c75eefdd9f47f3122"
   dependencies:
     arweave "^1.6.0"
     buffer-to-uint8array "^1.1.0"

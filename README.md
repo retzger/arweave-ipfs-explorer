@@ -1,68 +1,61 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# arweave-Ipfs explore
 
-In the project directory, you can run:
+>Permaweb Explorer for fetching and storing ipfs data into Arweave Blockchain
 
-### `yarn start`
+It uses [arweave-ipfs](https://github.com/imerkle/arweave-ipfs)(serverless) and [arweave-ipfs-server](https://github.com/imerkle/arweave-ipfs-server)(server-backed) at it's core.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This explorer works similar to the other ipfs api for example [infura](https://ipfs.infura.io/ipfs/QmTAznyH583xUgEyY5zdrPB2LSGY7FUBPDddWKj58GmBgp), [globalupload](https://ipfs.globalupload.io/QmTAznyH583xUgEyY5zdrPB2LSGY7FUBPDddWKj58GmBgp)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `yarn test`
+# Server-backed Arweave-Ipfs Explorer
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This is a server-backed permaweb explorer. It fetches and also stores ipfs data. It's backed by a [server](https://github.com/imerkle/arweave-ipfs-server) currently hosted @https://3b565264.ngrok.io
 
-### `yarn build`
+https://arweave.net/hzsSwh4JOHsggmXYUYqd8IimgjKsdRAtMMp8J4CZcu0
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+###### Note: A centralized server can be down anytime therefore it's no guarantee the links will work forever. It's reccommended to use Server-less Explorer
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+#### Examples
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+https://arweave.net/hzsSwh4JOHsggmXYUYqd8IimgjKsdRAtMMp8J4CZcu0#Qmaisz6NMhDB51cCvNWa1GMS7LU1pAxdF4Ld6Ft9kZEP2a
 
-### `yarn eject`
+https://arweave.net/hzsSwh4JOHsggmXYUYqd8IimgjKsdRAtMMp8J4CZcu0#QmQeEyDPA47GqnduyVVWNdnj6UBPXYPVWogAQoqmAcLx6y
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+https://arweave.net/hzsSwh4JOHsggmXYUYqd8IimgjKsdRAtMMp8J4CZcu0#QmTAznyH583xUgEyY5zdrPB2LSGY7FUBPDddWKj58GmBgp
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Serverless Arweave-Ipfs Explorer
 
-## Learn More
+This is a server-less permaweb explorer. It only fetches ipfs data. It uses [arweave-ipfs](https://github.com/imerkle/arweave-ipfs) to fetch data.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+https://arweave.net/zjyjb-jCcTejlOpUhPtoBwtqb-1dqSlM-rIvkfTouwc
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Examples
 
-### Code Splitting
+https://arweave.net/zjyjb-jCcTejlOpUhPtoBwtqb-1dqSlM-rIvkfTouwc#Qmaisz6NMhDB51cCvNWa1GMS7LU1pAxdF4Ld6Ft9kZEP2a
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+https://arweave.net/zjyjb-jCcTejlOpUhPtoBwtqb-1dqSlM-rIvkfTouwc#QmQeEyDPA47GqnduyVVWNdnj6UBPXYPVWogAQoqmAcLx6y
 
-### Analyzing the Bundle Size
+https://arweave.net/zjyjb-jCcTejlOpUhPtoBwtqb-1dqSlM-rIvkfTouwc#QmTAznyH583xUgEyY5zdrPB2LSGY7FUBPDddWKj58GmBgp
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+## Setup
 
-### Making a Progressive Web App
+ - `git clone https://github.com/imerkle/arweave-ipfs-explorer`
+ - `cd arweave-ipfs-explorer`
+ - `yarn install`
+ - `yarn run start`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+ Modify `src/constants.js` for configuration
+```js
+//for server-less build
+ const API=""
+ //for server-backed build
+ const API="your-server-url"
 
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+//max bytes to display in browser
+//files larger than this will be downloaded instead
+//defaults to 10MB
+const MAX_SIZE_SHOW = 10000000;
+ ```
