@@ -11,7 +11,7 @@ import axios from 'axios';
 const fileType = require('file-type');
 const textEncoding = require('text-encoding');
 const TextDecoder = textEncoding.TextDecoder;
-const arw = new ArweaveIpfs();
+const arw = new ArweaveIpfs({ host: 'ipfs.infura.io', port: 5001, protocol: 'https' }, { host: 'arweave.net', port: 443, protocol: 'https', timeout: 50000 });
 
 class App extends React.Component {
   render() {
@@ -130,6 +130,7 @@ class Display extends React.Component {
       let res;
       if (!API) {
         res = await arw.get(hash);
+        console.log(res);
       } else {
         const respones = await axios.get(`${API}/get?args=${hash}`);
         res = respones.data;
@@ -162,6 +163,7 @@ class Display extends React.Component {
             } else if (ftype.mime.includes("audio")) {
               this.setState({ audio: url });
             } else if (ftype.mime.includes("video")) {
+              console.log("ok")
               this.setState({ video: url });
             } else {
               download(bytes, hash, ftype);
@@ -178,7 +180,7 @@ class Display extends React.Component {
   render() {
     const hash = this.props.match.params.hash;
     if (this.state.text) {
-      return this.state.text;
+      return (<pre>{this.state.text}</pre>);
     } else if (this.state.img) {
       return (<img src={this.state.img} alt={hash} />);
     } else if (this.state.audio) {
