@@ -13,6 +13,8 @@ const textEncoding = require('text-encoding');
 const TextDecoder = textEncoding.TextDecoder;
 const arw = new ArweaveIpfs({ host: 'ipfs.infura.io', port: 5001, protocol: 'https' }, { host: 'arweave.net', port: 443, protocol: 'https', timeout: 50000 });
 
+const BG = "url('chrome://global/skin/media/imagedoc-darknoise.png')";
+
 class App extends React.Component {
   render() {
     return (
@@ -159,11 +161,13 @@ class Display extends React.Component {
             const url = window.URL.createObjectURL(blob);
 
             if (ftype.mime.includes("image")) {
+              document.body.style.backgroundImage = BG;
               this.setState({ img: url });
             } else if (ftype.mime.includes("audio")) {
+              document.body.style.backgroundImage = BG;
               this.setState({ audio: url });
             } else if (ftype.mime.includes("video")) {
-              console.log("ok")
+              document.body.style.backgroundImage = BG;
               this.setState({ video: url });
             } else {
               download(bytes, hash, ftype);
