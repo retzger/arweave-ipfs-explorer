@@ -1759,7 +1759,7 @@ arrify@^1.0.1:
 
 "arweave-ipfs@https://github.com/imerkle/arweave-ipfs.git":
   version "1.0.0"
-  resolved "https://github.com/imerkle/arweave-ipfs.git#6cc7a0cd6ad8fbdf2d4ac26c75eefdd9f47f3122"
+  resolved "https://github.com/imerkle/arweave-ipfs.git#2ef425da0e8ea4c6c90a9172a8b004aff7161ead"
   dependencies:
     arweave "^1.6.0"
     buffer-to-uint8array "^1.1.0"
@@ -1892,6 +1892,14 @@ axios@^0.18.0:
   version "0.18.1"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.18.1.tgz#ff3f0de2e7b5d180e757ad98000f1081b87bcea3"
   integrity sha512-0BfJq4NSfQXd+SkFdrvFbG7addhYSBA2mQwISr46pD6E5iqkWg02RAs8vyTT/j0RTnoYmeXauBuSv1qKwR179g==
+  dependencies:
+    follow-redirects "1.5.10"
+    is-buffer "^2.0.2"
+
+axios@^0.19.0:
+  version "0.19.0"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.19.0.tgz#8e09bff3d9122e133f7b8101c8fbdd00ed3d2ab8"
+  integrity sha512-1uvKqKQta3KBxIz14F2v06AEHZ/dIoeKfbTRkK1E5oqjDnuEerLmYTgJB5AiQZHJcljpg1TuRzdjDR06qNk0DQ==
   dependencies:
     follow-redirects "1.5.10"
     is-buffer "^2.0.2"
