@@ -14,7 +14,7 @@ https://ipfs.globalupload.io/QmTAznyH583xUgEyY5zdrPB2LSGY7FUBPDddWKj58GmBgp
 
 # Serverless Arweave-Ipfs Explorer
 
-This is a server-less permaweb explorer. It only fetches ipfs data. It uses [arweave-ipfs](https://github.com/imerkle/arweave-ipfs) to fetch data.
+This is a server-less permaweb explorer. It uses [arweave-ipfs](https://github.com/imerkle/arweave-ipfs) to fetch data. A wallet is required to add ipfs hash through serverless explorer.
 
 https://arweave.net/5ljkBHQs2m4JLag-U51YEdG45rvhmO_NYENl7t8umrY
 
@@ -29,7 +29,7 @@ https://arweave.net/5ljkBHQs2m4JLag-U51YEdG45rvhmO_NYENl7t8umrY#QmTAznyH583xUgEy
 
 # Server-backed Arweave-Ipfs Explorer
 
-This is a server-backed permaweb explorer. It fetches and also stores ipfs data. It's backed by a [server](https://github.com/imerkle/arweave-ipfs-server) currently hosted @https://3b565264.ngrok.io
+This is a server-backed permaweb explorer. It fetches and also stores ipfs data without any wallet. It's backed by a [server](https://github.com/imerkle/arweave-ipfs-server) currently hosted @https://3b565264.ngrok.io
 
 https://arweave.net/-L0hP1RghjcaN6LAsy3s-YlbtjEJYUOvos11lb4X1Tg
 
