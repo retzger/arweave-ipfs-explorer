@@ -16,32 +16,32 @@ https://ipfs.globalupload.io/QmTAznyH583xUgEyY5zdrPB2LSGY7FUBPDddWKj58GmBgp
 
 This is a server-less permaweb explorer. It only fetches ipfs data. It uses [arweave-ipfs](https://github.com/imerkle/arweave-ipfs) to fetch data.
 
-https://arweave.net/2qTbAbUebhqmsgmV5_YAPr3F77bfmxCBm4nzDlAI4ps
+https://arweave.net/5ljkBHQs2m4JLag-U51YEdG45rvhmO_NYENl7t8umrY
 
 #### Examples
 
-https://arweave.net/2qTbAbUebhqmsgmV5_YAPr3F77bfmxCBm4nzDlAI4ps#Qmaisz6NMhDB51cCvNWa1GMS7LU1pAxdF4Ld6Ft9kZEP2a
+https://arweave.net/5ljkBHQs2m4JLag-U51YEdG45rvhmO_NYENl7t8umrY#Qmaisz6NMhDB51cCvNWa1GMS7LU1pAxdF4Ld6Ft9kZEP2a
 
-https://arweave.net/2qTbAbUebhqmsgmV5_YAPr3F77bfmxCBm4nzDlAI4ps#QmQeEyDPA47GqnduyVVWNdnj6UBPXYPVWogAQoqmAcLx6y
+https://arweave.net/5ljkBHQs2m4JLag-U51YEdG45rvhmO_NYENl7t8umrY#QmQeEyDPA47GqnduyVVWNdnj6UBPXYPVWogAQoqmAcLx6y
 
-https://arweave.net/2qTbAbUebhqmsgmV5_YAPr3F77bfmxCBm4nzDlAI4ps#QmTAznyH583xUgEyY5zdrPB2LSGY7FUBPDddWKj58GmBgp
+https://arweave.net/5ljkBHQs2m4JLag-U51YEdG45rvhmO_NYENl7t8umrY#QmTAznyH583xUgEyY5zdrPB2LSGY7FUBPDddWKj58GmBgp
 
 
 # Server-backed Arweave-Ipfs Explorer
 
 This is a server-backed permaweb explorer. It fetches and also stores ipfs data. It's backed by a [server](https://github.com/imerkle/arweave-ipfs-server) currently hosted @https://3b565264.ngrok.io
 
-https://arweave.net/EKpXiUIa5AY6EiufApjQyPOIOY8Qf3NVAefPbVW_dmo
+https://arweave.net/-L0hP1RghjcaN6LAsy3s-YlbtjEJYUOvos11lb4X1Tg
 
 ###### Note: A centralized server can be down anytime therefore it's no guarantee the links will work forever. It's reccommended to use Server-less Explorer
 
 #### Examples
 
-https://arweave.net/EKpXiUIa5AY6EiufApjQyPOIOY8Qf3NVAefPbVW_dmo#Qmaisz6NMhDB51cCvNWa1GMS7LU1pAxdF4Ld6Ft9kZEP2a
+https://arweave.net/-L0hP1RghjcaN6LAsy3s-YlbtjEJYUOvos11lb4X1Tg#Qmaisz6NMhDB51cCvNWa1GMS7LU1pAxdF4Ld6Ft9kZEP2a
 
-https://arweave.net/EKpXiUIa5AY6EiufApjQyPOIOY8Qf3NVAefPbVW_dmo#QmQeEyDPA47GqnduyVVWNdnj6UBPXYPVWogAQoqmAcLx6y
+https://arweave.net/-L0hP1RghjcaN6LAsy3s-YlbtjEJYUOvos11lb4X1Tg#QmQeEyDPA47GqnduyVVWNdnj6UBPXYPVWogAQoqmAcLx6y
 
-https://arweave.net/EKpXiUIa5AY6EiufApjQyPOIOY8Qf3NVAefPbVW_dmo#QmTAznyH583xUgEyY5zdrPB2LSGY7FUBPDddWKj58GmBgp
+https://arweave.net/-L0hP1RghjcaN6LAsy3s-YlbtjEJYUOvos11lb4X1Tg#QmTAznyH583xUgEyY5zdrPB2LSGY7FUBPDddWKj58GmBgp
 
 
 

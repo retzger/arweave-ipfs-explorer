@@ -37,7 +37,7 @@ class Add extends React.Component {
   render() {
     return (
       <div style={{ textAlign: "center" }}>
-        <h1>Arweave-Ipfs Bridge</h1>
+        <h1>Arweave-Ipfs Bridge {API ? "Server-Backed" : "Server-less"}</h1>
         <br />
         <textarea
           style={{
@@ -70,7 +70,10 @@ class Add extends React.Component {
           cursor: "pointer",
         }}
           onClick={() => document.getElementById('upload').click()}>
-          Upload Arweave Wallet ( {API ? `Optional` : "Required"} ) </button>
+          {
+            !this.state.jwk ? `Upload Arweave Wallet (${API ? "Optional" : "Required"})` : "Wallet Loaded"
+          }
+        </button>
         <input type="file" id="upload" onChange={e => this.readWallet(e.target.files[0])} style={{ display: "none" }} />
         <br />
         <div style={{
