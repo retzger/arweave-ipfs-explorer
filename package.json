@@ -5,7 +5,7 @@
   "homepage": "./",
   "dependencies": {
     "arweave-ipfs": "https://github.com/imerkle/arweave-ipfs.git",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "file-type": "^12.4.0",
     "got": "^9.6.0",
     "react": "^16.12.0",
